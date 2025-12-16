@@ -11,7 +11,7 @@ const projects = [
     github: "https://github.com/devasish27/Anomaly-Detection-using-TimeGAN",
     demo: "https://your-live-demo-link.com", // leave empty if no live demo
 
-    img: "/src/assets/projects/timegan.png"
+    img: "/projects/timegan.png"
   },
 
   {
@@ -26,7 +26,7 @@ const projects = [
     github: "https://github.com/devasish27/AGI_Assistant",
     demo: "https://github.com/devasish27/AGI_Assistant/blob/main/AGI%20assistant.mp4",
 
-    img: "/src/assets/projects/agi.png"
+    img: "/projects/agi.png"
   },
 
   {
@@ -41,7 +41,7 @@ const projects = [
     github: "https://github.com/devasish27/Personalized-Book-Recommendation-System",
     demo: "https://your-live-demo-link.com",
 
-    img: "/src/assets/projects/bookrec.png"
+    img: "/projects/bookrec.png"
   },
 
   {
@@ -56,7 +56,7 @@ const projects = [
     github: "https://github.com/devasish27/learnease_cms_fullstack",
     demo: "https://your-live-demo-link.com",
 
-    img: "/src/assets/projects/cms.png"
+    img: "/projects/cms.png"
   },
   {
     id: "movie",
@@ -70,7 +70,7 @@ const projects = [
     github: "https://github.com/devasish27/-Movie-Revenue-Prediction",
     demo: "https://your-live-demo-link.com",
 
-    img: "/src/assets/projects/mov.png"
+    img: "/projects/mov.png"
   },
   {
     id: "sign",
@@ -84,7 +84,7 @@ const projects = [
     github: "https://github.com/devasish27/real-time-sign-language-detection",
     demo: "https://your-live-demo-link.com",
 
-    img: "/src/assets/projects/sign.png"
+    img: "/projects/sign.png"
   }
 ];
 
