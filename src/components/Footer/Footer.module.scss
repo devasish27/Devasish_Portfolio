@@ -1,0 +1,3 @@
+.footer { padding: 24px 0; border-top: 1px solid rgba(0,0,0,0.04); [data-theme='dark'] & { border-top-color: rgba(255,255,255,0.04); } }
+.inner { display:flex; justify-content:space-between; align-items:center; color: var(--muted); }
+@media (max-width: 768px) { .inner { flex-direction: column; gap:8px; } }

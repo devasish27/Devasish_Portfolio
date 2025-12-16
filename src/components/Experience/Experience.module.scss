@@ -1,0 +1,7 @@
+.timeline { margin-top: 12px; display: grid; gap: 16px; }
+.item { display: flex; gap: 12px; align-items: flex-start; }
+.left { width: 140px; color: var(--muted); font-weight: 600; }
+.right { background: rgba(0,0,0,0.02); padding: 12px; border-radius: 10px; [data-theme='dark'] & { background: rgba(255,255,255,0.02); } }
+.right h4 { margin: 0 0 6px 0; }
+.right ul { margin: 0; padding-left: 18px; }
+@media (max-width: 768px) { .item { flex-direction: column; } .left { width: auto; } }

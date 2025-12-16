@@ -1,0 +1,42 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* GAP BETWEEN CARDS */
+  margin-top: 16px;
+}
+
+
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.02);
+
+  [data-theme="dark"] & {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.icon {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.degree {
+  margin: 6px 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

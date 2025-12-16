@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  &:hover { transform: translateY(-6px); box-shadow: 0 12px 26px rgba(0,0,0,0.08); }
+}
+.thumb {
+  width: 100%;
+  height: 260px; /* WAS 200px */
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* PUSH buttons to bottom */
+
+  padding: 16px;
+  color: white;
+
+  background: linear-gradient(
+    180deg,
+    rgba(6, 10, 25, 0.2) 0%,
+    rgba(6, 10, 25, 0.85) 65%
+  );
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.card:hover .overlay, .card:focus .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.summary {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tech {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px; /* ADD SPACE */
+}
+.chip {
+  background: rgba(255,255,255,0.12);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.viewBtn {
+  align-self: flex-end;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}

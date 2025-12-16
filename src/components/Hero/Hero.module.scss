@@ -1,0 +1,41 @@
+.hero {
+  padding: 48px 0;
+}
+.card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: rgba(0,0,0,0.02);
+  padding: 20px;
+  border-radius: 12px;
+  [data-theme='dark'] & { background: rgba(255,255,255,0.02); }
+}
+.left { flex: 0 0 120px; }
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.right { flex: 1; }
+.role { color: var(--muted); margin-top: 4px; }
+.ctas { display: flex; gap: 12px; margin-top: 12px; }
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.btnGhost {
+  background: none;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .card { flex-direction: column; text-align: center; }
+  .left { margin-bottom: 12px; }
+}

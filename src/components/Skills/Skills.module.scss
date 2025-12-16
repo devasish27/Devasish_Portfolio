@@ -1,0 +1,19 @@
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+.group h4 { margin: 0 0 8px 0; }
+.chips { display:flex; gap:8px; flex-wrap:wrap; }
+.chip {
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.15);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--text);
+}
+@media (max-width: 768px) {
+  .wrap { grid-template-columns: 1fr; }
+}
